@@ -1,6 +1,5 @@
 name: activator
 version: 0.0.1
-inherits: wercker/default
 type: main
 platform: ubuntu@12.04
 description: Wercker box for Typesafe Activator with Oracle Java 8.
