@@ -25,3 +25,6 @@ script: |
     sudo cp activator-${VERSION_ACTIVATOR}/activator-launch-${VERSION_ACTIVATOR}.jar /usr/local/bin/
     sudo cp -r activator-${VERSION_ACTIVATOR}/repository /usr/local/bin/
     sudo cp -r activator-${VERSION_ACTIVATOR}/templates /usr/local/bin/
+
+    rm typesafe-activator-${VERSION_ACTIVATOR}.zip
+    rm -r activator-${VERSION_ACTIVATOR}
