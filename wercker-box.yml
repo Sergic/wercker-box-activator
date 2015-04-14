@@ -8,7 +8,9 @@ keywords:
     - java
     - activator
 script: |
-    # Obtain "add-apt-repository" command.
+    # Install requirements.
+    sudo apt-get update
+    sudo apt-get install curl unzip aptitude
     sudo aptitude install python-software-properties
 
     # Install Oracle JDK 1.8.
@@ -20,7 +22,6 @@ script: |
 
     # Install Typesafe Activator.
     export VERSION_ACTIVATOR=1.3.2
-    sudo apt-get install curl unzip
     curl -O http://downloads.typesafe.com/typesafe-activator/${VERSION_ACTIVATOR}/typesafe-activator-${VERSION_ACTIVATOR}.zip
     unzip typesafe-activator-${VERSION_ACTIVATOR}.zip
 
