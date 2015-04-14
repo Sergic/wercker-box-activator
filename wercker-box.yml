@@ -11,7 +11,7 @@ script: |
     # Install requirements.
     sudo apt-get update
     sudo apt-get install curl unzip aptitude
-    sudo aptitude install python-software-properties
+    echo y | sudo aptitude install python-software-properties
 
     # Install Oracle JDK 1.8.
     sudo add-apt-repository -y ppa:webupd8team/java
